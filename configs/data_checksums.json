@@ -1,0 +1,230 @@
+{
+  "ReadMe.md": [
+    2247,
+    "f9e614b3a46b401ae98cab33093ac129a44428113ae139bafaeb517561dd2ed3"
+  ],
+  "GT_test.mat": [
+    360303,
+    "971ed831c85261229eefe776888e00e01783b47d20fd518ab4db7dde935b6474"
+  ],
+  "GT_train.mat": [
+    600205,
+    "068485b44b7df505e56088b27315384537037aeff4a44b903e1de2bf87a2eb83"
+  ],
+  "psdRGB_train_1.tiff": [
+    4331938,
+    "b8c68bb689599f7bd8e0f2f53d48a38531dce7011ae0581ad125595eedb29d42"
+  ],
+  "psdRGB_train_10.tiff": [
+    4332084,
+    "3f70485d3d8e8b64ac99c45886f278a2b09906db2560b6404687696f0aed04f3"
+  ],
+  "psdRGB_train_11.tiff": [
+    4332220,
+    "e31ab59debdb21ac77050730a8150a95373cb771bc7084f138b76e02d2a763cc"
+  ],
+  "psdRGB_train_12.tiff": [
+    4332258,
+    "14698eadeffde55c0dc67992616740311a7d6e985de6ab714abace527a37e7d7"
+  ],
+  "psdRGB_train_13.tiff": [
+    4332282,
+    "86f1fdbea8af460159faf7055445ab472f54e2f069b6af36eaab158c87fd8ae3"
+  ],
+  "psdRGB_train_14.tiff": [
+    4332210,
+    "253d9f6a207ac93d3ded5f2c2ebcc110a437c725adf365b40c6b9de174fa3ae6"
+  ],
+  "psdRGB_train_15.tiff": [
+    4332218,
+    "d9a2fd3f60911b0691f223229d07c618a80df3dad2f2c786183212ac2722fd92"
+  ],
+  "psdRGB_train_16.tiff": [
+    4331954,
+    "26435b3435d396e22f6aefedab66e4fc483446328ed163f4d5fa67fd1d6aa77e"
+  ],
+  "psdRGB_train_17.tiff": [
+    4331986,
+    "e43b65388a76743d76d19f9592f8127b1f24f828e8fe5078349ce5ae900e6371"
+  ],
+  "psdRGB_train_2.tiff": [
+    4332376,
+    "fc18bd39e176b76c6ee0a963664c1f5fb413d554a8f748f870ec60243b9fbe33"
+  ],
+  "psdRGB_train_3.tiff": [
+    4332310,
+    "407e1ae6f26179974a074762720b3b90254303c19d389242010a050ae01764ba"
+  ],
+  "psdRGB_train_4.tiff": [
+    4332134,
+    "4a0f8b8e4bb6ab58250c753f3024ea3fe965c132400fe5eaf6056aab401506ae"
+  ],
+  "psdRGB_train_5.tiff": [
+    4332376,
+    "533ecbcfafb974a0294c28cd78a4accd6c00b50d617ad894cd28f8bc38fda2bd"
+  ],
+  "psdRGB_train_6.tiff": [
+    4332200,
+    "659762dd6912a2407f2d9a6191e8a7c48bfdb1813819b6a195832b7d6cbf7b4d"
+  ],
+  "psdRGB_train_7.tiff": [
+    4332268,
+    "67aecc3e25a792b5ebfcfcabeca9e73b7691705372ecb95bba3dc58fe4380036"
+  ],
+  "psdRGB_train_8.tiff": [
+    4332254,
+    "52e64cb1e29fe1f5b81117a920ca2440df11b5826730f0a911c108525c8da929"
+  ],
+  "psdRGB_train_9.tiff": [
+    4332282,
+    "ae1ac43ea820beed39e0ff03bad8186cfefbe31d6c8bda95e67f763e15565a8d"
+  ],
+  "psdRGB_test_1.tiff": [
+    4332128,
+    "8a6485c53a01fa9e723e19f948c2817e3eb6a5b112a5ff10137e91e791be9b0b"
+  ],
+  "psdRGB_test_10.tiff": [
+    4331934,
+    "bb7d6718d1fde237481a8fb93baf1546cb33274ecd741d2c68841b0cd55c22c6"
+  ],
+  "psdRGB_test_2.tiff": [
+    4332182,
+    "23bf1b98413cb7188c9c5e7dfafd0d276f3b33827fe2d0576d1e738ccaeb359a"
+  ],
+  "psdRGB_test_3.tiff": [
+    4332238,
+    "254157dd97b264f08a1737cbc8ed3742f9c54aa8fde97337cee57caed2b35f69"
+  ],
+  "psdRGB_test_4.tiff": [
+    4332252,
+    "797d44fa2b607532109fe03c4f1ca0960e2b13e550e631080a86219afa7ae1bc"
+  ],
+  "psdRGB_test_5.tiff": [
+    4332230,
+    "abb6dfddf07c9c6c45488eaa5c5c29be07dacdb1a1a94d88c77c8208d282e164"
+  ],
+  "psdRGB_test_6.tiff": [
+    4332024,
+    "01a641c11d1714bff74d4a1439c2603b8399f9f533905669a0f889f41312cf72"
+  ],
+  "psdRGB_test_7.tiff": [
+    4332204,
+    "1e7141dc7c07ca544d53a2f2f799f19604907d2b0287c7922354a077a471a027"
+  ],
+  "psdRGB_test_8.tiff": [
+    4332136,
+    "5afb6e96c869cc3b4ada96983d7be92220815335c730d8ea683761873d463bce"
+  ],
+  "psdRGB_test_9.tiff": [
+    4332100,
+    "154380302b872e1a34f43e150907b532f36acec23cbc60ab79a91b3191895055"
+  ],
+  "HSI_train_1.h5": [
+    4022292664,
+    "4b5f95c9b4f280c8c769488f8cc2c0313f1ebb8150dae29dcdbf6d813e1a166c"
+  ],
+  "HSI_train_2.h5": [
+    4022292664,
+    "a44da055ccd7660abb81dfab2daec7ec3ba470715a94f6115e1f81c5e9758e55"
+  ],
+  "HSI_train_3.h5": [
+    4022292664,
+    "4b0b1064bfb726840827b1cf539dac7018daeeb12e5be3b8894258f814bf64aa"
+  ],
+  "HSI_train_4.h5": [
+    4022292664,
+    "bca249dd984ee8f1987b23db7fe226cf67a9bab612e65dbaa2f0b9c89caeb315"
+  ],
+  "HSI_train_5.h5": [
+    4022292664,
+    "a24c1a4eae71e3e67c984c48b5f5c1572904524887c14c8aa2aeef6cf5c5b948"
+  ],
+  "HSI_train_6.h5": [
+    4022292664,
+    "311ff4dd681eef39ca9cd7791479b51ab2b24d7643d218e87ed2bf2b0bccc891"
+  ],
+  "HSI_train_7.h5": [
+    4022292664,
+    "00af2cb16728338b6bc0dc6e2e2a31017314d3307a97f39b75afe60df18a1eca"
+  ],
+  "HSI_train_8.h5": [
+    4022292664,
+    "5eab95462eef8b55d4bf0858c57d0c8a333b8668f7fd1d5a66a31b7c263d5111"
+  ],
+  "HSI_train_9.h5": [
+    4022292664,
+    "bb09ba9335d8beffe9086867829110088ea8c67bf42256eb30fc0dcd53a02c02"
+  ],
+  "HSI_train_10.h5": [
+    4022292664,
+    "3a6d321b665c1881d103e5c6e34d84c779721cb2108fa73530af079acfb59678"
+  ],
+  "HSI_train_11.h5": [
+    4022292664,
+    "15e4327e97a6058f4639c324bedcb35322e5723b7dd9eb00d5a7cf816091e3ec"
+  ],
+  "HSI_train_12.h5": [
+    4022292664,
+    "4b70f9496fb4eeee2927f14ef5d7086f24b19220d6deefa5992c9e6ece5b424f"
+  ],
+  "HSI_train_13.h5": [
+    4022292664,
+    "c46928dfa230ae295fa3385898f181dabdfa3ec4d0e0b98156ec5367dac0f3b0"
+  ],
+  "HSI_train_14.h5": [
+    4022292664,
+    "bd9bbd61810bcba0482f9b0527d99c09a056a4cce36ce39a5e70b4084cefd2f5"
+  ],
+  "HSI_train_15.h5": [
+    4022292664,
+    "686177403b5a23b63e14b950f5523a46d2fb94d659453c6cade124cfd81246f0"
+  ],
+  "HSI_train_16.h5": [
+    4022292664,
+    "0b96ab0c2e925eef492b57b49721f63d50c9d2d75aeb1ce3bcae08f6e8c37be9"
+  ],
+  "HSI_train_17.h5": [
+    4022292664,
+    "26c046b772976cb337a956146f0dd4f77fb5b233f614ffe4832a5d4a01fca2fd"
+  ],
+  "HSI_test_1.h5": [
+    4022292664,
+    "e415aec9e059dcafab11a8a4197ffdc98fb03d264139452d8ae2f6e1714c70c0"
+  ],
+  "HSI_test_2.h5": [
+    4022292664,
+    "4fb9c92c2dc5487acfa295471218ac0e1a59b85ae44ab278c3b272b19a01d12b"
+  ],
+  "HSI_test_3.h5": [
+    4022292664,
+    "c1b2972ddb29499cad7c9c1a981473bdaaf2d88f60dfdbe3f5446ae95d06e1a3"
+  ],
+  "HSI_test_4.h5": [
+    4022292664,
+    "da017ba680e7f26de81c297e65481b46ba6501703c6c1d28ef87fc6fa9dac5f1"
+  ],
+  "HSI_test_5.h5": [
+    4022292664,
+    "0fad7ded4430bd803f2870a4e09089a888caf899a4c03ac3f2cceb12f0965404"
+  ],
+  "HSI_test_6.h5": [
+    4022292664,
+    "73b988ada1227879eb00c20f3aa575c20dfb6961d7cd18f68cb2cb25793a12f6"
+  ],
+  "HSI_test_7.h5": [
+    4022292664,
+    "4c6fc2a6c975a0b1a8c7e0e506c63217b6c16608486cc7b7d9e9b884414f2442"
+  ],
+  "HSI_test_8.h5": [
+    4022292664,
+    "61a24d0c94a8fc4e3ea422f9f6c35edb9270ada1ad8d358c51f7c6cebf03b38e"
+  ],
+  "HSI_test_9.h5": [
+    4022292664,
+    "47096603f46c3aff98d4d3256e69472d2c69ac8af050b2b3c9137fcdd419da1a"
+  ],
+  "HSI_test_10.h5": [
+    4022292664,
+    "b53d8faadb350e31d00f29fdb5f02d711e3ee5212ac8d1e122925d6e1b79695a"
+  ]
+}

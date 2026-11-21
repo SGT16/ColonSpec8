@@ -1,0 +1,32 @@
+{
+  "segmentation_summary.json": {
+    "source_file": "model_summary.json",
+    "source_sha256": "2c44885db5226d60dfd39122def10fbd9a9b3142a3ec2bcb44b337f909845bd1",
+    "released_sha256": "d44691ec48f9a3fe712d1ff3e2595b3a53f99cf054ecc64d799f15de6e558e73",
+    "selection": "Aggregate models, paired contrasts, aggregation and SpecTr profile outcome"
+  },
+  "segmentation_per_seed.csv": {
+    "source_file": "per_seed_metrics.csv",
+    "source_sha256": "01b212f90ce47dc835473d39dd6c6c8e388706ce591a295d04de9d1451b06ff5",
+    "released_sha256": "01b212f90ce47dc835473d39dd6c6c8e388706ce591a295d04de9d1451b06ff5",
+    "selection": "Byte-identical per-seed metrics"
+  },
+  "segmentation_checkpoints.json": {
+    "source_file": "accepted_registry.json",
+    "source_sha256": "d0bc18c6c4aabf84a6c509ea1c5882562ce1ecf868db007ec5aa494f0495cb49",
+    "released_sha256": "f3b004feae8ee9db784aff7aeef0f1316c7c768790b8ae8f252f04e031d721c4",
+    "selection": "Model, seed, selected checkpoint digest and epoch; machine paths omitted"
+  },
+  "mask_initialization.json": {
+    "source_file": "paired_control_analysis.json",
+    "source_sha256": "ee8865a5fd6dad7c274f785dbf5f8f6ee9540cdc82ed770e557b66ea46fabd55",
+    "released_sha256": "7f94570fbc5eb8115c6989a9367a6e77e39abb265ca3ffa303afdd840d83a2bc",
+    "selection": "Nine matched contrasts, mean fixed endpoint and positive pair count"
+  },
+  "ftir_classification.json": {
+    "source_file": "analysis_report.json",
+    "source_sha256": "75c98822e81c8b36ffca6dc1d49ba65829b934ad02a0282f752686526f342535",
+    "released_sha256": "16b718d4717a3af8322933105238afe087f837479a71f869d29ecb2c9d995354",
+    "selection": "Out-of-fold aggregate metrics and paired cluster intervals; patient-linked predictions omitted"
+  }
+}

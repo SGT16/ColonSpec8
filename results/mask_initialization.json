@@ -1,0 +1,69 @@
+{
+  "pairs": [
+    {
+      "mask_seed": 938,
+      "init_seed": 938,
+      "fixed_end_f1_difference_pp": 3.899333906615843,
+      "best_full_budget_f1_difference_pp": 4.080815509244873,
+      "virtual_es15_f1_difference_pp": 5.355534949974938
+    },
+    {
+      "mask_seed": 476,
+      "init_seed": 938,
+      "fixed_end_f1_difference_pp": 2.0842904381427996,
+      "best_full_budget_f1_difference_pp": 2.512186637385738,
+      "virtual_es15_f1_difference_pp": 2.086938855537701
+    },
+    {
+      "mask_seed": 993,
+      "init_seed": 938,
+      "fixed_end_f1_difference_pp": 3.4799534544524224,
+      "best_full_budget_f1_difference_pp": 3.373516120251241,
+      "virtual_es15_f1_difference_pp": 2.5381801853770036
+    },
+    {
+      "mask_seed": 938,
+      "init_seed": 476,
+      "fixed_end_f1_difference_pp": 2.0197147192773546,
+      "best_full_budget_f1_difference_pp": 2.8956059970035475,
+      "virtual_es15_f1_difference_pp": 1.9142876910387296
+    },
+    {
+      "mask_seed": 476,
+      "init_seed": 476,
+      "fixed_end_f1_difference_pp": 1.7291038622175736,
+      "best_full_budget_f1_difference_pp": 1.711224331604022,
+      "virtual_es15_f1_difference_pp": 1.7184322252025375
+    },
+    {
+      "mask_seed": 993,
+      "init_seed": 476,
+      "fixed_end_f1_difference_pp": 3.759543793973663,
+      "best_full_budget_f1_difference_pp": 3.623085912563495,
+      "virtual_es15_f1_difference_pp": 4.4435595419121565
+    },
+    {
+      "mask_seed": 938,
+      "init_seed": 993,
+      "fixed_end_f1_difference_pp": 3.2000121678656512,
+      "best_full_budget_f1_difference_pp": 4.081305049252126,
+      "virtual_es15_f1_difference_pp": 4.119550807555228
+    },
+    {
+      "mask_seed": 476,
+      "init_seed": 993,
+      "fixed_end_f1_difference_pp": 1.7895025871599302,
+      "best_full_budget_f1_difference_pp": 2.3408443628591957,
+      "virtual_es15_f1_difference_pp": 2.3408443628591957
+    },
+    {
+      "mask_seed": 993,
+      "init_seed": 993,
+      "fixed_end_f1_difference_pp": 2.5119389838798134,
+      "best_full_budget_f1_difference_pp": 4.252001796822258,
+      "virtual_es15_f1_difference_pp": 4.684288243586865
+    }
+  ],
+  "primary_mean_difference_pp": 2.719265990398339,
+  "primary_positive_pairs": 9
+}

@@ -1,0 +1,14 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.4.1+cu124
+numpy==2.3.3
+scipy==1.16.2
+scikit-learn==1.7.2
+h5py==3.16.0
+einops==0.8.1
+pandas==2.3.3
+Pillow==11.3.0
+psutil==7.1.0
+tqdm==4.67.1
+packaging==25.0
+PyYAML==6.0.3
+ninja

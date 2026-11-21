@@ -1,0 +1,135 @@
+{
+  "models": [
+    "local_pca8_supervised",
+    "local_only_supervised",
+    "local_frozen_projection",
+    "unet_mt",
+    "mamba_mt",
+    "nnunet2d_supervised",
+    "hybridsn_supervised",
+    "gmtssa_train_only"
+  ],
+  "seeds": [
+    938,
+    476,
+    993,
+    518,
+    663,
+    628,
+    828,
+    353,
+    621,
+    306
+  ],
+  "test_ids": [
+    "HSI_test_1",
+    "HSI_test_2",
+    "HSI_test_3",
+    "HSI_test_4",
+    "HSI_test_5",
+    "HSI_test_6",
+    "HSI_test_7",
+    "HSI_test_8",
+    "HSI_test_9",
+    "HSI_test_10"
+  ],
+  "test_gt": "GT_test.mat",
+  "gt_variable": "GT_test",
+  "expected_h5_shape": [
+    351,
+    1035,
+    1384
+  ],
+  "expected_gt_shape": [
+    1384,
+    1035,
+    10
+  ],
+  "orientation": "H5 CWH -> HWC using transpose(2,1,0); GT[:,:,image_index] already HW; fixed from released source, no TEST-dependent alignment selection",
+  "labels": {
+    "0": "non-tumor",
+    "1": "tumor"
+  },
+  "evaluation_pixels": "all pixels of all ten official TEST images; no label-dependent ROI or exclusion",
+  "normalization_path": "data/processed/pilot_v2/normalization.json",
+  "preprocessing_refit": false,
+  "prediction_model": "student",
+  "tile_size": 64,
+  "tile_stride": 32,
+  "physical_batch": 2,
+  "precision": "float32 neural; float64 GM",
+  "amp": false,
+  "tta": false,
+  "ensemble": false,
+  "postprocessing": false,
+  "neural_threshold": 0.5,
+  "neural_tie_class": 1,
+  "gm_tie_class": 0,
+  "gm_probabilities": false,
+  "primary_endpoint": "equal-image mean binary fixed-class macro F1, per seed; descriptive mean and sample SD across all ten seeds",
+  "primary_contrast": "learned_minus_pca8",
+  "primary_contrast_history": "Revised after exploratory development VAL, fixed before final TEST; not preregistered at original project inception",
+  "secondary_metrics": [
+    "tumor_f1",
+    "macro_iou",
+    "tumor_iou",
+    "accuracy",
+    "balanced_accuracy",
+    "precision",
+    "sensitivity",
+    "specificity",
+    "mcc",
+    "auroc",
+    "average_precision",
+    "brier_score",
+    "ece15",
+    "boundary_f1",
+    "hd95"
+  ],
+  "boundary_tolerance_pixels": 2,
+  "pooled_metrics": "separate pixel-weighted report; no pooled boundary distances",
+  "statistical_reporting": "descriptive paired seed differences, sample SD, win/tie/loss counts and complete per-image matrices; no patient CI, patient inference, bootstrap or p-values without patient identifiers",
+  "report_groups": {
+    "development_two": [
+      938,
+      476
+    ],
+    "prior_three": [
+      993,
+      518,
+      663
+    ],
+    "previous_five": [
+      938,
+      476,
+      993,
+      518,
+      663
+    ],
+    "new_five": [
+      628,
+      828,
+      353,
+      621,
+      306
+    ],
+    "all_ten": [
+      938,
+      476,
+      993,
+      518,
+      663,
+      628,
+      828,
+      353,
+      621,
+      306
+    ]
+  },
+  "spectr": {
+    "excluded_from_accuracy": true,
+    "reason": "PROFILE_HARD_TIMEOUT_1200s; no accepted completed fit",
+    "retain_compute_and_failures": true
+  },
+  "no_test_tuning_or_refitting": true
+}

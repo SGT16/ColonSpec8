@@ -1,0 +1,3 @@
+* text=auto eol=lf
+results/segmentation_per_seed.csv -text
+results/*.json -text

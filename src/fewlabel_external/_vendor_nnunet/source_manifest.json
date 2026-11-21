@@ -1,0 +1,167 @@
+{
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/__init__.py",
+      "vendored_path": "dynamic_network_architectures/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modification": "none",
+      "distributed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/architectures/__init__.py",
+      "vendored_path": "dynamic_network_architectures/architectures/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modification": "none",
+      "distributed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/architectures/abstract_arch.py",
+      "vendored_path": "dynamic_network_architectures/architectures/abstract_arch.py",
+      "original_sha256": "5b2bb0d781217c9d11b71e69df3bcc3cfb0da8b27ae9582623dd8734477844c6",
+      "modification": "none",
+      "distributed_sha256": "5b2bb0d781217c9d11b71e69df3bcc3cfb0da8b27ae9582623dd8734477844c6"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/architectures/unet.py",
+      "vendored_path": "dynamic_network_architectures/architectures/unet.py",
+      "original_sha256": "bfa12cc740055407462365fcd797c372f7efb351e33d56737f2f3c619b07c6ea",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "00c6e6f1ca1e00a41718cb4f24d83c979631dea0f5b066adb2172e127a59497d"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/__init__.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modification": "none",
+      "distributed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/helper.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/helper.py",
+      "original_sha256": "0bf28761af078a3b46f273109717529afa921aedea419fcbbe6761bd66b9c833",
+      "modification": "none",
+      "distributed_sha256": "0bf28761af078a3b46f273109717529afa921aedea419fcbbe6761bd66b9c833"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/plain_conv_encoder.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/plain_conv_encoder.py",
+      "original_sha256": "c1af990f1a613c8594234fbc185eb70da2e2b545ea7c933711e91618da2943c4",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "1ffe06698b4b28dd1ddea54d4d58bc77151578e913fb44db276b244e6fcc06c6"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/regularization.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/regularization.py",
+      "original_sha256": "bc7c48fa3d63f90eaf319e48effce6a35c6c0ac10a482cf8a6035b1b7ea25b95",
+      "modification": "none",
+      "distributed_sha256": "bc7c48fa3d63f90eaf319e48effce6a35c6c0ac10a482cf8a6035b1b7ea25b95"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/residual.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/residual.py",
+      "original_sha256": "bd6b68f6df17c23f4eaa81cacf461c7fd7d85b46cef628add43e5309533a047c",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "c968257d360698e4cd28722791efaa9d7fe8eb314e94244e81d3bad43ed33e3f"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/residual_encoders.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/residual_encoders.py",
+      "original_sha256": "e4977f34c9cc43a6effa4a27f1fe8a769a8a600be4a05565432fc8c39f34ae04",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "aca18490749dcb5a8dd3f8cc36fe415e6523f162f05415055850220be6a13f39"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/simple_conv_blocks.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/simple_conv_blocks.py",
+      "original_sha256": "02a7c21bca3c0acc20923a10970f14e853510f32a1f7ea2ef068cf636559ba2e",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "52329d33107a240f2fd65cf8ff162f0c0bdb43ee1f13bda55e9e83f68aace3a2"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/unet_decoder.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/unet_decoder.py",
+      "original_sha256": "5eec090b199daf154c8e0ab3d64c45a1b1621f5aac68c6dea6a7203b0ddcc999",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "84d4286bbc1f53c4afddbb2634f9dc4d4cbf6dd737b6b3829d4d0aa03c4d16c8"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/building_blocks/unet_residual_decoder.py",
+      "vendored_path": "dynamic_network_architectures/building_blocks/unet_residual_decoder.py",
+      "original_sha256": "fa58585ceda5aad362e7adda73efd8e95eabacd30d484e9c83ad62beb4b04db1",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "87519a857c42666628f07d676ff9672aba700132afc2717d0a582bd32091612a"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/initialization/__init__.py",
+      "vendored_path": "dynamic_network_architectures/initialization/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modification": "none",
+      "distributed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/dynamic_network_architectures/initialization/weight_init.py",
+      "vendored_path": "dynamic_network_architectures/initialization/weight_init.py",
+      "original_sha256": "8a5734074107cad9bf1b3151a39630a039cf90844aa5c6e972aaeb95827c7403",
+      "modification": "absolute import prefix relocation only",
+      "distributed_sha256": "8bdc64699f31eb6d75af1d3c4459e04f1475b6b117864833a8cb68dcf2bb327d"
+    },
+    {
+      "repository": "MIC-DKFZ/dynamic-network-architectures",
+      "commit": "7bf2053613e2ec3e76ccac8a5fdc51dd72668287",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/dynamic-network-architectures/7bf2053613e2ec3e76ccac8a5fdc51dd72668287/LICENSE",
+      "vendored_path": "LICENSE.dynamic-network-architectures",
+      "original_sha256": "7b26c3dffb131e8206336ecc7680a0d0080007cf49b7de7ad64ae936e78a1ce4",
+      "modification": "none",
+      "distributed_sha256": "7b26c3dffb131e8206336ecc7680a0d0080007cf49b7de7ad64ae936e78a1ce4"
+    },
+    {
+      "repository": "MIC-DKFZ/nnUNet",
+      "commit": "066918fe8ddf1cafa731af87e63ccc56770bfc1f",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/nnUNet/066918fe8ddf1cafa731af87e63ccc56770bfc1f/LICENSE",
+      "vendored_path": "LICENSE.nnUNet",
+      "original_sha256": "ff93b6fdf1d59f7c48ca7f44f2d0db47bb7743a1c6fa0f4c5f4d7809f78ce70e",
+      "modification": "none",
+      "distributed_sha256": "ff93b6fdf1d59f7c48ca7f44f2d0db47bb7743a1c6fa0f4c5f4d7809f78ce70e"
+    },
+    {
+      "repository": "MIC-DKFZ/nnUNet",
+      "commit": "066918fe8ddf1cafa731af87e63ccc56770bfc1f",
+      "url": "https://raw.githubusercontent.com/MIC-DKFZ/nnUNet/066918fe8ddf1cafa731af87e63ccc56770bfc1f/nnunetv2/experiment_planning/experiment_planners/network_topology.py",
+      "vendored_path": "network_topology.py",
+      "original_sha256": "2140c9c6b20273bbf3052a72459954543d93790cc5269e0d8fbaddcfbd30aa8f",
+      "modification": "none",
+      "distributed_sha256": "2140c9c6b20273bbf3052a72459954543d93790cc5269e0d8fbaddcfbd30aa8f"
+    }
+  ]
+}

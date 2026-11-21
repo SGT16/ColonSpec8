@@ -1,0 +1,110 @@
+{
+  "model": {
+    "patch_size": 64,
+    "stem_channels": 8,
+    "spatial_grid": 8,
+    "d_model": 32,
+    "d_state": 16,
+    "d_conv": 4,
+    "expand": 2,
+    "spectral_directions": 2,
+    "spatial_directions": 4,
+    "mamba_class": "mamba_ssm.Mamba",
+    "allow_fallback": false,
+    "input_bands_preserved": true,
+    "decoder_revision": "shared_prepool_32x32_skip_v1",
+    "unet_widths": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "unet_normalization": "GroupNorm",
+    "pretrained": false,
+    "architecture": "local_only_v1",
+    "multiscale_widths": [
+      8,
+      16,
+      24,
+      32
+    ]
+  },
+  "train": {
+    "effective_batch_size": 32,
+    "physical_batch_size": 2,
+    "max_epochs": 100,
+    "patience": 15,
+    "steps_per_epoch": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "checkpoint_metric": "val_image_macro_f1",
+    "num_workers": 4,
+    "prefetch_factor": 4,
+    "cache_limit_gib": 16,
+    "cache_scope": "global_not_per_worker",
+    "precision": "float32",
+    "save_best_weights": true,
+    "save_epoch_resume_checkpoint": false,
+    "restart_mode": "same_run_from_epoch_1",
+    "patch_sampling": "image_balanced_half_revealed_anchor_half_label_blind"
+  },
+  "ssl": {
+    "warmup_epochs": 5,
+    "ramp_epochs": 10,
+    "ema_teacher": 0.99,
+    "confidence_threshold": 0.95,
+    "lambda_u_max": 0,
+    "lambda_proto_max": 0.1,
+    "prototype_momentum": 0.9,
+    "prototype_temperature": 0.2,
+    "prototype_source": "revealed_train_teacher_features_only",
+    "prototype_balance": "equal_contributing_images_within_class"
+  },
+  "augment": {
+    "online_train_only": true,
+    "flip": true,
+    "rotate90": true,
+    "illumination_scale": [
+      0.95,
+      1.05
+    ],
+    "noise_std_normalized": 0.01,
+    "band_dropout_max_fraction": 0.05,
+    "spectral_mask_max_fraction": 0.05,
+    "wavelength_shift": false
+  },
+  "evaluation": {
+    "threshold": 0.5,
+    "primary_comparison": "fewlabel_mamba_minus_mamba_mt_at_0.005",
+    "bootstrap_unit": null,
+    "bootstrap_repetitions": 0,
+    "patient_statistics_enabled": false,
+    "inferential_p_values_enabled": false,
+    "uncertainty_scope": "10_run_initialization_sampling_and_label_mask_variability_not_patient_ci",
+    "run_sd_ddof": 1,
+    "test_requires_explicit_unlock": true,
+    "test_ensemble": "none_individual_run_checkpoints_all_10_reported",
+    "external_validation": false,
+    "prediction_model": "student",
+    "tile_size": 64,
+    "tile_stride": 32,
+    "overlap_merge": "mean_probability",
+    "test_time_augmentation": false
+  },
+  "pca": {
+    "basis_path": "experiments/pca8_v1/artifacts/pca8/basis.npz",
+    "manifest_path": "experiments/pca8_v1/artifacts/pca8/manifest.json",
+    "components": 8,
+    "whiten": false
+  },
+  "data": {
+    "expected_bands": 351
+  },
+  "pilot": {
+    "steps_per_epoch": 128,
+    "max_epochs": 100,
+    "patience": 15,
+    "fraction": 0.005
+  }
+}

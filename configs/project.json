@@ -1,0 +1,27 @@
+{
+  "protocol_version": "2.0.0",
+  "data": {
+    "expected_bands": 351
+  },
+  "paths": {
+    "raw": "data/raw",
+    "processed": "data/processed"
+  },
+  "split": {
+    "persistent_seeds": "state/seeds.json",
+    "development_images": 17,
+    "validation_images": 3,
+    "validation_manifest": "state/fixed_split.json"
+  },
+  "labels": {
+    "ignore_index": -1,
+    "fractions": [
+      0.001,
+      0.005,
+      0.01
+    ]
+  },
+  "pilot": {
+    "fraction": 0.005
+  }
+}

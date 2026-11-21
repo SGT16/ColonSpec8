@@ -1,0 +1,290 @@
+{
+  "scope": "BORKOVITS_MIR814_PATIENT_GROUPED_COLON_CLASSIFICATION_V1",
+  "dataset": "Borkovits2026_Semmelweis_FTIR",
+  "source_doi": "10.5281/zenodo.17790337",
+  "paper_doi": "10.1038/s41597-026-07873-1",
+  "license": "CC-BY-4.0",
+  "expected_cores": 238,
+  "expected_patients": 75,
+  "classes": [
+    "NC",
+    "CRC"
+  ],
+  "excluded_classes": [
+    "CRLM",
+    "simple liver"
+  ],
+  "class_counts": {
+    "NC": 117,
+    "CRC": 121
+  },
+  "arms": [
+    "learned",
+    "random",
+    "pca8"
+  ],
+  "initialization_seeds": [
+    938,
+    476,
+    993
+  ],
+  "folds": 3,
+  "split_seed": 741,
+  "data_seed": 741,
+  "split_unit": "reported_patient_id_across_all_TMA_core_patch_modalities",
+  "split_strategy": "three patient-grouped folds balanced by patient class-presence strata; each patient held out exactly once",
+  "epochs": 100,
+  "steps_per_epoch": 16,
+  "physical_batch": 2,
+  "bag_patches": 4,
+  "gradient_accumulation": 8,
+  "effective_batch": 16,
+  "patch_size": 64,
+  "input_bands": 814,
+  "projection_channels": 8,
+  "cube_shape": [
+    88,
+    88,
+    814
+  ],
+  "wavenumbers_cm_inverse": {
+    "first": 4000,
+    "last": 748,
+    "step": -4
+  },
+  "raw_representation": "transmittance_percent_no_clipping_or_band_removal",
+  "inference_tile_batch": 4,
+  "inference_positions": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      24
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      24,
+      24
+    ]
+  ],
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "optimizer": "AdamW",
+  "precision": "float32",
+  "deterministic_algorithms": true,
+  "tf32": false,
+  "cudnn_benchmark": false,
+  "early_stopping": false,
+  "validation_selection": false,
+  "endpoint": "fixed_epoch100_1600updates",
+  "heldout_evaluation": "ONLY_AFTER_ALL_27_FINAL_CHECKPOINTS_FROZEN",
+  "aggregation": "mean spatial logits; mean four patch logits per core; one cross entropy per core bag",
+  "scaler": "TRAIN-only per-band mean/std, fixed spread 64x64 grid (4096 spectra) per TRAIN core; float64 accumulation, float32 applied parameters",
+  "pca": "TRAIN-only standardized spectra, eight centered components, no whitening; deterministic eigenvector signs",
+  "class_sampling": "uniform class then uniform TRAIN patient with that class then uniform core of that patient/class",
+  "patient_metric_unit": "core classification with patient-clustered uncertainty; no invented single diagnosis per patient",
+  "primary_metric": "mean across three initialization seeds of pooled out-of-fold core macro-F1",
+  "secondary_metrics": [
+    "accuracy",
+    "balanced_accuracy",
+    "sensitivity_CRC",
+    "specificity_NC",
+    "per_class_precision_recall_f1",
+    "AUROC_CRC",
+    "Brier",
+    "ECE_10bins",
+    "confusion_matrix",
+    "train_wall_s",
+    "epoch_mean_s",
+    "parameter_count",
+    "peak_GPU_memory_bytes"
+  ],
+  "cluster_bootstrap": {
+    "unit": "patient_id",
+    "replicates": 2000,
+    "seed": 741,
+    "confidence": 0.95,
+    "paired": true,
+    "across_inits": "mean metrics across the same three trained initializations in each paired patient resample",
+    "limitation": "conditional on fixed splits and fitted models; does not resample training or establish clinical validation"
+  },
+  "automatic_fit_retry": false,
+  "max_model_wall_s": 172800,
+  "network_download_workers": 8,
+  "network_request_attempts": 3,
+  "parent_run": "experiments/chaddad_v1",
+  "parent_required_fits": 27,
+  "parent_freeze_hash": "0364b8529ec3d34f86c1ca462203259a645562004038b89f9f5a767aaa88519c",
+  "parent_operational_seal_hash": "cc2dd2c2cc2bb22268c1ef0c42c2ea241fc3cbe45c4ca75bc839115907bf26a1",
+  "interpretation": "independent-institution patient-grouped FTIR colorectal core classification method replication; newly initialized models; not original-checkpoint external segmentation or clinical validation; all positive and negative results retained",
+  "jobs": [
+    {
+      "job_id": "learned_fold0_init938",
+      "arm": "learned",
+      "fold": 0,
+      "init_seed": 938
+    },
+    {
+      "job_id": "random_fold0_init938",
+      "arm": "random",
+      "fold": 0,
+      "init_seed": 938
+    },
+    {
+      "job_id": "pca8_fold0_init938",
+      "arm": "pca8",
+      "fold": 0,
+      "init_seed": 938
+    },
+    {
+      "job_id": "learned_fold1_init938",
+      "arm": "learned",
+      "fold": 1,
+      "init_seed": 938
+    },
+    {
+      "job_id": "random_fold1_init938",
+      "arm": "random",
+      "fold": 1,
+      "init_seed": 938
+    },
+    {
+      "job_id": "pca8_fold1_init938",
+      "arm": "pca8",
+      "fold": 1,
+      "init_seed": 938
+    },
+    {
+      "job_id": "learned_fold2_init938",
+      "arm": "learned",
+      "fold": 2,
+      "init_seed": 938
+    },
+    {
+      "job_id": "random_fold2_init938",
+      "arm": "random",
+      "fold": 2,
+      "init_seed": 938
+    },
+    {
+      "job_id": "pca8_fold2_init938",
+      "arm": "pca8",
+      "fold": 2,
+      "init_seed": 938
+    },
+    {
+      "job_id": "learned_fold0_init476",
+      "arm": "learned",
+      "fold": 0,
+      "init_seed": 476
+    },
+    {
+      "job_id": "random_fold0_init476",
+      "arm": "random",
+      "fold": 0,
+      "init_seed": 476
+    },
+    {
+      "job_id": "pca8_fold0_init476",
+      "arm": "pca8",
+      "fold": 0,
+      "init_seed": 476
+    },
+    {
+      "job_id": "learned_fold1_init476",
+      "arm": "learned",
+      "fold": 1,
+      "init_seed": 476
+    },
+    {
+      "job_id": "random_fold1_init476",
+      "arm": "random",
+      "fold": 1,
+      "init_seed": 476
+    },
+    {
+      "job_id": "pca8_fold1_init476",
+      "arm": "pca8",
+      "fold": 1,
+      "init_seed": 476
+    },
+    {
+      "job_id": "learned_fold2_init476",
+      "arm": "learned",
+      "fold": 2,
+      "init_seed": 476
+    },
+    {
+      "job_id": "random_fold2_init476",
+      "arm": "random",
+      "fold": 2,
+      "init_seed": 476
+    },
+    {
+      "job_id": "pca8_fold2_init476",
+      "arm": "pca8",
+      "fold": 2,
+      "init_seed": 476
+    },
+    {
+      "job_id": "learned_fold0_init993",
+      "arm": "learned",
+      "fold": 0,
+      "init_seed": 993
+    },
+    {
+      "job_id": "random_fold0_init993",
+      "arm": "random",
+      "fold": 0,
+      "init_seed": 993
+    },
+    {
+      "job_id": "pca8_fold0_init993",
+      "arm": "pca8",
+      "fold": 0,
+      "init_seed": 993
+    },
+    {
+      "job_id": "learned_fold1_init993",
+      "arm": "learned",
+      "fold": 1,
+      "init_seed": 993
+    },
+    {
+      "job_id": "random_fold1_init993",
+      "arm": "random",
+      "fold": 1,
+      "init_seed": 993
+    },
+    {
+      "job_id": "pca8_fold1_init993",
+      "arm": "pca8",
+      "fold": 1,
+      "init_seed": 993
+    },
+    {
+      "job_id": "learned_fold2_init993",
+      "arm": "learned",
+      "fold": 2,
+      "init_seed": 993
+    },
+    {
+      "job_id": "random_fold2_init993",
+      "arm": "random",
+      "fold": 2,
+      "init_seed": 993
+    },
+    {
+      "job_id": "pca8_fold2_init993",
+      "arm": "pca8",
+      "fold": 2,
+      "init_seed": 993
+    }
+  ],
+  "total_jobs": 27
+}

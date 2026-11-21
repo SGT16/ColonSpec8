@@ -1,0 +1,6 @@
+Original MATLAB source copyright Ivica Kopriva and respective cited authors.
+Repository declares Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+All preserved upstream source files are unmodified, pinned to the recorded commit.
+The new Python adaptation is explicitly attributed and shares the same CC-BY-NC-SA-4.0 terms.
+Original MATLAB classification scripts are evidence only and MUST NOT be executed for the shared holdout comparison.
