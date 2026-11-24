@@ -19,6 +19,29 @@ def equal(actual, expected):
         raise ValueError(f"Value mismatch: {actual} vs {expected}")
 
 
+def verify_r4():
+    study = read("r4_exploratory_test.json")
+    models = {"ColonSpec8_R4_PARENT", "R4_STATIC", "R4_ZERO", "R4_ADDITIVE", "R4_FULL"}
+    images = {f"HSI_test_{i}" for i in range(1, 11)}
+    if set(study["models"]) != models or set(study["images"]) != images or len(study["images"]) != 10:
+        raise ValueError("Incomplete R4 comparison")
+    if set(study["seeds"]) != SEEDS or len(study["seeds"]) != len(SEEDS):
+        raise ValueError("Unexpected R4 seed grid")
+    for model, result in study["models"].items():
+        if set(result["by_seed"]) != {str(seed) for seed in SEEDS}:
+            raise ValueError(f"Incomplete R4 seed results for {model}")
+        seed_means = []
+        for seed, row in result["by_seed"].items():
+            values = row["per_image"]
+            if set(values) != images or not all(0 <= x <= 1 for x in values.values()):
+                raise ValueError(f"Invalid R4 image results for {model}, seed {seed}")
+            score = mean(values.values())
+            equal(score, row["macro_f1"])
+            seed_means.append(score)
+        equal(mean(seed_means), result["mean_macro_f1"])
+        equal(stdev(seed_means), result["sample_sd"])
+
+
 def main():
     for name, provenance in read("provenance.json").items():
         if sha256((ROOT / name).read_bytes()).hexdigest() != provenance["released_sha256"]:
@@ -63,7 +86,9 @@ def main():
             scores.append(score)
         equal(mean(scores),ftir["oof_by_arm"][arm]["macro_f1_mean"])
         equal(stdev(scores),ftir["oof_by_arm"][arm]["macro_f1_sd"])
-    print("Verified 80 segmentation summaries, 9 paired controls and 9 FTIR out-of-fold summaries.")
+    verify_r4()
+    print("Verified 80 primary segmentation summaries, 9 paired controls, 9 FTIR out-of-fold "
+          "summaries and 500 exploratory R4 comparison scores (5 models, 10 seeds, 10 images).")
 
 
 if __name__ == "__main__":

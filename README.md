@@ -25,6 +25,20 @@ In the separate 3 × 3 sparse-validation control, the learned projection exceede
 
 On the independent FTIR collection, the three out-of-fold core-level macro-F1 means across three initializations were 76.84% (learned), 69.18% (random) and 67.93% (PCA8). This experiment trained new classifiers on FTIR spectra. It evaluates method transfer to a different task. External segmentation performance of the original frozen model remains unknown. [FTIR classification results and patient-cluster intervals](results/ftir_classification.json).
 
+### Exploratory R4 comparison
+
+After the main evaluation, four spectral adapters were compared on the same ten official TEST images. Each seed used a ColonSpec8 parent trained for exactly 100 epochs with a fixed 0.5% label mask (mask seed 938). The parent weights were frozen, and each adapter trained for a further 100 epochs. The primary ColonSpec8 result in the main table uses validation-selected checkpoints.
+
+| Method | Spectral projection | TEST macro-F1 (%), mean ± SD |
+| --- | --- | ---: |
+| ColonSpec8 (fixed-epoch parent) | Learned eight-channel projection | 87.12 ± 0.54 |
+| R4_STATIC | Four learned rotation angles shared across pixels | 86.95 ± 0.41 |
+| R4_ZERO | Pixel-dependent rotation with complementary controller inputs set to zero | 86.16 ± 0.55 |
+| R4_ADDITIVE | Pixel-dependent additive correction along four complementary directions | 86.15 ± 0.78 |
+| R4_FULL | Pixel-dependent rotation using projected and complementary spectral inputs | 86.14 ± 0.58 |
+
+R4_STATIC had the highest mean among the adapters, 0.17 percentage points below its matched parent. Each seed mean gives equal weight to the ten images. The SD describes variation across the ten initializations. [Full-precision image scores, seed means and model summaries](results/r4_exploratory_test.json).
+
 ## Data
 
 * **ColonCancerHSI.** Download the 57 original files from the [authors' data directory](https://data.fulir.irb.hr/data/ColonCancerHSI_Data/) into `data/raw/` using their published names. The [input checksum list](configs/data_checksums.json) contains file names, sizes and SHA-256 digests. Preparation uses the 17 official development images, including 14 for training and three for sparse validation. Each sparse mask reveals 0.5% of the pixels for the reported experiments. The official TEST masks enter only the evaluation command. [Dataset record](https://data.fulir.irb.hr/object/irb:538) and [original method](https://doi.org/10.1016/j.compbiomed.2025.110841).
